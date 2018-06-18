@@ -29,3 +29,12 @@ The actual code removal is done with UglifyJsPlugin
         })
     ],
 
+###Lodash
+
+importing "size" from lodash like this: 
+
+    import size from 'lodash/size'
+    
+...Seem to work bringing the bundle to 5.83kb instead of 71.8kb for just specifyinmg: 
+
+    import { size } from 'lodash    
